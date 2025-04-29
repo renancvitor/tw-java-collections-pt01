@@ -21,8 +21,8 @@ public class ProgramaDesafio01Tema02 {
 
             if (!linha.isEmpty()) {
                 String[] partes = linha.split(" ");
-                for (String parte : partes) {
-                    numeros.add(Integer.parseInt(parte));
+                for (int j = 1; j < partes.length; j++) {
+                    numeros.add(Integer.parseInt(partes[j]));
                 }
             }
 
@@ -31,8 +31,8 @@ public class ProgramaDesafio01Tema02 {
 
         int consulta = scan.nextInt();
         for (int i = 0; i < consulta; i++) {
-            int x = scan.nextInt();
-            int y = scan.nextInt();
+            int x = scan.nextInt() - 1;
+            int y = scan.nextInt() - 1;
 
             if (x >= 0 && x < linhas.size()) {
                 List<Integer> linha = linhas.get(x);
