@@ -20,7 +20,7 @@ public class ControleEstoquePorCategoria {
             String linhaCategorias = scanner.nextLine();
             String[] partes = linhaCategorias.split(" ");
 
-            String categoria = partes[0]
+            String categoria = partes[0];
             for (int j = 0; j < partes.length; j++) {
                 estoque.put(partes[j], categoria);
             }
