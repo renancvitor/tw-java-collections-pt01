@@ -37,7 +37,12 @@ public class ProgramaDesafio02Tema02 {
             }
         }
 
-        System.out.println(L);
+        for (int i = 0; i < L.size(); i++) {
+            System.out.print(L.get(i));
+            if (i < L.size() - 1) {
+                System.out.print(" ");
+            }
+        }
 
         scan.close();
     }
