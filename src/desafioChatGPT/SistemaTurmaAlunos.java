@@ -19,11 +19,11 @@ public class SistemaTurmaAlunos {
 
         for (int i = 0; i < n; i++) {
             String linhaTurma = scanner.nextLine();
-            String[] alunos = linhaTurma.split(" ");
+            String[] partes = linhaTurma.split(" ");
 
-            String turma = alunos[0];
-            for (int j = 1; j < alunos.length; j++) {
-                String aluno = alunos[j];
+            String turma = partes[0];
+            for (int j = 1; j < partes.length; j++) {
+                String aluno = partes[j];
                 cadastroTurma.computeIfAbsent(aluno, k -> new ArrayList<>()).add(turma);
             }
         }
