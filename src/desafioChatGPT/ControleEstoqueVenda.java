@@ -33,7 +33,24 @@ public class ControleEstoqueVenda {
             estoqueVenda.put(nome, produto);
         }
 
-        
+        System.out.print("\nDigite a quantidade de produtos que deseja consultar no estoque:  ");
+        int m = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.println("\nDigite o(s) nome(s) do(s) produto(s) para consultar no estoqueP:");
+
+        for (int i = 0; i < m; i++) {
+            String produtoConsulta = scanner.nextLine();
+
+            if (estoqueVenda.containsKey(produtoConsulta)) {
+                Produto produto = estoqueVenda.get(produtoConsulta);
+
+                System.out.println("Produto:  " + produto.getNome());
+                System.out.println("Estoque:  " + produto.getQuantidade());
+            } else {
+                System.out.println("Produto não cadastrado. Verifique!");
+            }
+        }
 
         scanner.close();
     }
