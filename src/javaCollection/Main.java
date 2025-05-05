@@ -27,6 +27,11 @@ public class Main {
             Pessoa p = iteratorPessoa.next();
             System.out.println(p);
         }
+
+        System.out.println("\nUsando forEach");
+        for (Pessoa p : pessoas) {
+            System.out.println(p);
+        }
         System.out.println("\nFim!");
     }
 }
