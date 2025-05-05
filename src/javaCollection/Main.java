@@ -24,13 +24,14 @@ public class Main {
 
         System.out.println("\nCom Iterator");
         Iterator<Pessoa> iteratorPessoa = pessoas.iterator();
-        while (iteratorPessoa.hasNext()) {
-            Pessoa p = iteratorPessoa.next();
-            if (p.getId() == 1) {
-                iteratorPessoa.remove();
-            }
-            System.out.println(p);
-        }
+//        while (iteratorPessoa.hasNext()) {
+//            Pessoa p = iteratorPessoa.next();
+//            if (p.getId() == 1) {
+//                iteratorPessoa.remove();
+//            }
+//            System.out.println(p);
+//        }
+        pessoas.removeIf(pessoa -> pessoa.getId() == 1);
         System.out.println(pessoas);
 
 //        System.out.println("\nUsando forEach");
