@@ -1,4 +1,4 @@
-package desafio01Tema02;
+package desafiosTema02;
 
 import java.util.ArrayList;
 import java.util.List;

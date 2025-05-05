@@ -1,10 +1,6 @@
-package desafio01Tema02;
+package desafiosTema02;
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class ProgramaDesafio01Tema02 {
 
