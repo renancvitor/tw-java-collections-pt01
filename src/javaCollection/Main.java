@@ -3,6 +3,7 @@ package javaCollection;
 import modelCollection.Pessoa;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
@@ -15,6 +16,9 @@ public class Main {
         pessoas.add(new Pessoa(1, "TreinaWeb 01"));
         pessoas.add(new Pessoa(2, "TreinaWeb 02"));
         pessoas.add(new Pessoa(3, "TreinaWeb 03"));
+
+        Collections.sort(pessoas);
+        System.out.println(pessoas);
 
 //        System.out.println("\nCom laço for");
 //        for (int i = 0; i < pessoas.size(); i++) {

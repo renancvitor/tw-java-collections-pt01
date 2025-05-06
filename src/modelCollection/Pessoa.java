@@ -2,7 +2,7 @@ package modelCollection;
 
 import java.util.Objects;
 
-public class Pessoa {
+public class Pessoa implements Comparable<Pessoa> {
 
     private int id;
     private String nome;
@@ -47,5 +47,16 @@ public class Pessoa {
                 "id = " + id +
                 ", nome = '" + nome + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Pessoa o) {
+        if (this.getId() == o.getId()) {
+            return 0;
+        }
+        if (this.getId() < o.getId()) {
+            return -1;
+        }
+        return 1;
     }
 }
