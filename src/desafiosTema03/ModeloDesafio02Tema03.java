@@ -8,6 +8,10 @@ public class ModeloDesafio02Tema03<T> implements Iterable<T> {
 
     private ArrayList<T> list;
 
+    public ModeloDesafio02Tema03() {
+        list = new ArrayList<>();
+    }
+
     public void inserir(T valor) {
         list.add(valor);
     }
