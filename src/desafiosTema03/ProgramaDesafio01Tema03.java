@@ -1,5 +1,6 @@
 package desafiosTema03;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class ProgramaDesafio01Tema03 {
@@ -14,7 +15,11 @@ public class ProgramaDesafio01Tema03 {
             lista.inserir(valor);
         }
 
-        
+        Iterator<Integer> it = lista.iterator();
+        while (it.hasNext()) {
+            Integer valor = it.next();
+            System.out.println(valor);
+        }
 
         scan.close();
     }
