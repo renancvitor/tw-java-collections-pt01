@@ -14,14 +14,34 @@ public class Main {
         System.out.println("\nHellot world!");
 
         List<Pessoa> pessoas = new ArrayList<Pessoa>();
-        pessoas.add(new Pessoa(1, "TreinaWeb 01"));
-        pessoas.add(new Pessoa(4, "TreinaWeb 04"));
-        pessoas.add(new Pessoa(2, "TreinaWeb 02"));
-        pessoas.add(new Pessoa(3, "TreinaWeb 03"));
+        pessoas.add(new Pessoa(1, "CTreinaWeb 01"));
+        pessoas.add(new Pessoa(4, "BTreinaWeb 04"));
+        pessoas.add(new Pessoa(2, "DTreinaWeb 02"));
+        pessoas.add(new Pessoa(3, "ATreinaWeb 03"));
 
-        Collections.sort(pessoas, new PessoaTamanhoNomeComparator());
+        // Collections.sort(pessoas, new PessoaTamanhoNomeComparator());
 
-        Collections.sort(pessoas);
+        // Collections.sort(pessoas);
+
+//        Collections.sort(pessoas, (o1, o2) -> {
+//            if (o1.getNome().length() == o2.getNome().length()) {
+//                return 0;
+//            } else if (o1.getNome().length() <  o2.getNome().length()) {
+//                return -1;
+//            }
+//            return 1;
+//        });
+
+        pessoas.sort((o1, o2) -> {
+            if (o1.getNome().length() == o2.getNome().length()) {
+                return 0;
+            } else if (o1.getNome().length() <  o2.getNome().length()) {
+                return -1;
+            }
+            return 1;
+        });
+
+        System.out.println("Este");
         System.out.println(pessoas);
 
 //        System.out.println("\nCom laço for");
@@ -40,7 +60,7 @@ public class Main {
 //            System.out.println(p);
 //        }
         pessoas.removeIf(pessoa -> pessoa.getId() == 1);
-        System.out.println(pessoas);
+        // System.out.println(pessoas);
 
 //        System.out.println("\nUsando forEach");
 //        for (Pessoa p : pessoas) {
