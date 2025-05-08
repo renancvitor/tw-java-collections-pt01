@@ -3,10 +3,7 @@ package javaCollection;
 import comparadoresCollection.PessoaTamanhoNomeComparator;
 import modelCollection.Pessoa;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
@@ -32,16 +29,27 @@ public class Main {
 //            return 1;
 //        });
 
-        pessoas.sort((o1, o2) -> {
-            if (o1.getNome().length() == o2.getNome().length()) {
+//        pessoas.sort((o1, o2) -> {
+//            if (o1.getNome().length() == o2.getNome().length()) {
+//                return 0;
+//            } else if (o1.getNome().length() <  o2.getNome().length()) {
+//                return -1;
+//            }
+//            return 1;
+//        });
+        pessoas.sort(Comparator.comparing(Pessoa::getNome, (o1, o2) -> {
+            if (o1.length() == o2.length()) {
                 return 0;
-            } else if (o1.getNome().length() <  o2.getNome().length()) {
+            } else if (o1.length() <  o2.length()) {
                 return -1;
             }
             return 1;
-        });
+        }));
+        System.out.println("Comparando com nome:");
+        System.out.println(pessoas);
 
-        System.out.println("Este");
+        pessoas.sort(Comparator.comparingInt(Pessoa::getId));
+        System.out.println("\nComparando com idL");
         System.out.println(pessoas);
 
 //        System.out.println("\nCom laço for");
