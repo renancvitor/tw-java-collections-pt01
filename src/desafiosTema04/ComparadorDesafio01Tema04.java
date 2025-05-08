@@ -6,6 +6,6 @@ public class ComparadorDesafio01Tema04 implements Comparator<ModeloDesafio01Tema
 
     @Override
     public int compare(ModeloDesafio01Tema04 o1, ModeloDesafio01Tema04 o2) {
-        return o1.nome.compareTo(o2.nome);
+        return Integer.compare(o2.placar, o1.placar);
     }
 }
