@@ -14,9 +14,9 @@ public class Main {
         System.out.println("\nHellot world!");
 
         List<Pessoa> pessoas = new ArrayList<Pessoa>();
-        pessoas.add(new Pessoa(1, "CTreinaWeb 01"));
-        pessoas.add(new Pessoa(4, "BTreinaWeb 04"));
-        pessoas.add(new Pessoa(2, "DTreinaWeb 02"));
+        pessoas.add(new Pessoa(1, "CccTreinaWeb 01"));
+        pessoas.add(new Pessoa(4, "BbTreinaWeb 04"));
+        pessoas.add(new Pessoa(2, "DdddTreinaWeb 02"));
         pessoas.add(new Pessoa(3, "ATreinaWeb 03"));
 
         // Collections.sort(pessoas, new PessoaTamanhoNomeComparator());
