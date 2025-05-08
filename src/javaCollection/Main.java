@@ -1,5 +1,6 @@
 package javaCollection;
 
+import comparadoresCollection.PessoaTamanhoNomeComparator;
 import modelCollection.Pessoa;
 
 import java.util.ArrayList;
@@ -14,8 +15,11 @@ public class Main {
 
         List<Pessoa> pessoas = new ArrayList<Pessoa>();
         pessoas.add(new Pessoa(1, "TreinaWeb 01"));
+        pessoas.add(new Pessoa(4, "TreinaWeb 04"));
         pessoas.add(new Pessoa(2, "TreinaWeb 02"));
         pessoas.add(new Pessoa(3, "TreinaWeb 03"));
+
+        Collections.sort(pessoas, new PessoaTamanhoNomeComparator());
 
         Collections.sort(pessoas);
         System.out.println(pessoas);
