@@ -51,15 +51,15 @@ public class Pessoa implements Comparable<Pessoa> {
 
     @Override
     public int compareTo(Pessoa o) {
-        // -1 se o1 for menor do que o2
         // 0 se o1 for igual a o2
-        // 1 se o1 for maior do que o2
         if (this.getId() == o.getId()) {
             return 0;
         }
+        // -1 se o1 for menor do que o2
         if (this.getId() < o.getId()) {
             return -1;
         }
+        // 1 se o1 for maior do que o2
         return 1;
     }
 }
