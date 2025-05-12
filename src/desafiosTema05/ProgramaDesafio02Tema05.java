@@ -14,7 +14,14 @@ public class ProgramaDesafio02Tema05 {
             nomes.add(s.nextLine());
         }
 
-        //Coloque seu código aqui
+        Collections.sort(nomes);
 
+        Set<String> ordenacao = new TreeSet<>(nomes);
+
+        for (String nome : ordenacao) {
+            System.out.println(nome);
+        }
+
+        s.close();
     }
 }
