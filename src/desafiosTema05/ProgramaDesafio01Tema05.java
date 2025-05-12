@@ -1,6 +1,6 @@
 package desafiosTema05;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class ProgramaDesafio01Tema05 {
 
@@ -15,7 +15,12 @@ public class ProgramaDesafio01Tema05 {
             pair_right[i] = scan.next();
         }
 
-        //Coloque seu código aqui
+        Set<String> set = new HashSet<>();
+        for (int i = 0; i< t; i++) {
+            set.add(pair_left[i] + "," + pair_right[i]);
+            System.out.println(set.size());
+        }
 
+        scan.close();
     }
 }
