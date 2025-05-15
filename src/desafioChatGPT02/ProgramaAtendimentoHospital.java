@@ -1,4 +1,4 @@
-package desafiosTema06;
+package desafioChatGPT02;
 
 import desafioChatGPT02.entites.Paciente;
 import desafioChatGPT02.model.AtendimentoPrioridadesHospital;
