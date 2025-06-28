@@ -36,7 +36,7 @@ Este repositório contém os exercícios, projetos e anotações desenvolvidos d
 - Plataforma [TreinaWeb](https://www.treinaweb.com.br/)
 - Instrutor Cleber Campomori
 - Carga horária: Aproximadamente 83 horas
-- Em andamento
+- Concluído
 
 ---
 
