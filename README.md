@@ -1,7 +1,8 @@
 # 🧠 Formação Desenvolvedor Java - [TreinaWeb](https://www.treinaweb.com.br/)
 
-![Status](https://img.shields.io/badge/Status-Em_Andamento-yellow)  
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)  
 <!-- Troque "Concluído" e a cor conforme o status:  
+     Concluído → brightgreen
      Em Andamento: yellow  
      Pausado: orange  
      Cancelado: red -->
